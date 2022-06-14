@@ -1,0 +1,17 @@
+Andrew Pickner
+no partner
+10/20/19
+
+Bonus Problems:
+  1.
+
+    The link to my tic-tac-toe game can be found on my portfolio site from HW 1 (Part 2).
+
+    The homepage is: https://pickypoo1987.github.io/hw_1_3308/index.html
+    The page where this link can be found: https://pickypoo1987.github.io/hw_1_3308/Part%202/mypage_bootstrap.html
+
+    The tic-tac-toe button is near the bottom of the page.
+
+  2.
+
+    I also attempted problem #2. I created 4 specs to test isEmpty() and all of the jasmine files can be found in the tic-tac-toe directory.

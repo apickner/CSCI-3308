@@ -1,0 +1,652 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameName_WebResourceData_WebResourceMIMETypeUUTF-8_https://www.w3.org/Protocols/POi<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en-US"><head>
+  <title>HTTP - Hypertext Transfer Protocol Overview</title>
+  <link href="/StyleSheets/activities.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p><a href="../"><img src="../Icons/WWW/w3c_home" alt="W3C" border="0" height="48" width="72"></a>&nbsp;<a href="../Architecture/"><img src="../Icons/arch" alt="Architecture Domain" border="0" height="48" width="212"></a> <img src="../Icons/WWW/HTTP48x" alt="HTTP" height="48" width="48"></p>
+
+<h1>HTTP - Hypertext Transfer Protocol</h1>
+
+<p align="center"><a href="#News">News</a> | <a href="Activity.html">HTTP
+Activity</a> | <a href="#Specs">Specs</a> | <a href="#Software">Software</a>
+| <a href="#Talks">Talks</a> | <a href="#Lists">Mailing lists</a> | <a href="#IETF">IETF</a> | <a href="HTTP/ietf-http-ext/">HTTP Extensions</a> |
+<a href="MUX/">WebMux</a> | <a href="HTTP-NG/">HTTP-NG</a> | <a href="/WCA">Web Characterization</a> | <a href="#Other">Background</a></p>
+
+<p></p>
+
+<div class="intro">
+<p>Now that both HTTP extensions and HTTP/1.1  are stable specifications (<a href="https://tools.ietf.org/html/rfc2616">RFC2616</a> at that time), W3C
+has closed the HTTP Activity.<!-- The Activity has achieved its goals of creating
+a successful standard that addresses the weaknesses of earlier HTTP
+versions. --></p>
+
+<p>An effort to revise HTTP/1.1 started in 2006, which led to the creation of the <a href="http://www.ietf.org/html.charters/httpbis-charter.html">IETF httpbis
+Working Group</a>. Work completed with the publication of RFC 723X (See <a href="#rfc723x">below</a>)</p>
+<ul>
+  <li><strong>2014-06</strong><a name="rfc723x" id="rfc723x"></a> RFC 723X published
+    <ul>
+      <li><a href="http://tools.ietf.org/html/rfc7230">RFC7230: HTTP/1.1, part 1: Message Syntax and Routing</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7231">RFC7231: HTTP/1.1, part 2: Semantics and Content</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7232">RFC7232: HTTP/1.1, part 4: Conditional Requests</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7233">RFC7233: HTTP/1.1, part 5: Range Requests</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7234">RFC7234: HTTP/1.1, part 6: Caching</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7235">RFC7235: HTTP/1.1, part 7: Authentication</a></li>
+    </ul>
+    Along with:
+    <ul>
+      <li><a href="http://tools.ietf.org/html/rfc7236">RFC7236: Initial HTTP Authentication Scheme Registrations</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7237">RFC7237: Initial HTTP Method Registrations</a></li>
+    </ul>
+    And related specifications:
+    <ul>
+      <li><a href="http://tools.ietf.org/html/rfc7238">RFC7238: The HTTP Status Code 308 (Permanent Redirect)</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7239">RFC7239: Forwarded HTTP Extension</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7240">RFC7240: Prefer Header for HTTP</a></li>
+    </ul>
+  </li>
+  <li><strong>2014-02</strong>: drafts -26 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/26">HTTP/1.1 specifications</a></li>
+  <li><strong>2013-11</strong>: drafts -25 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/25">HTTP/1.1 specifications</a></li>
+  <li><strong>2013-09</strong>: drafts -24 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/24">HTTP/1.1 specifications</a></li>
+  <li><strong>2013-07</strong>: drafts -23 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/23">HTTP/1.1 specifications</a></li>
+  <li><strong>2013-03</strong>: drafts -22 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/22">HTTP/1.1 specifications</a></li>
+  <li><strong>2012-10</strong>: drafts -21 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/21">HTTP/1.1 specifications</a></li>
+  <li><strong>2012-07</strong>: drafts -20 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/20">HTTP/1.1 specifications</a></li>
+  <li><strong>2012-03</strong>: drafts -19 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/19">HTTP/1.1 specifications</a></li>
+  <li><strong>2012-01</strong>: drafts -18 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/18">HTTP/1.1 specifications</a></li>
+  <li><strong>2011-10</strong>: drafts -17 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/17">HTTP/1.1 specifications</a></li>
+  <li><strong>2011-06</strong>: drafts -16 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/16">HTTP/1.1 specifications</a></li>
+  <li><strong>2011-07</strong>: drafts -15 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/15">HTTP/1.1 specifications</a></li>
+  <li><strong>2011-06</strong>: draft-ietf-httpbis-content-disp published as <a href="http://tools.ietf.org/html/rfc6266">RFC 6266</a></li>
+  <li><strong>2011-04</strong>: drafts -14 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/14">HTTP/1.1 specifications</a></li>
+  <li><strong>2011-03</strong>: drafts -13 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/13">HTTP/1.1 specifications</a></li>
+  <li><strong>2010-10</strong>: drafts -12 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/12">HTTP/1.1 specifications</a></li>
+  <li><strong>2010-08</strong>: drafts -11 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/11">HTTP/1.1 specifications</a></li>
+  <li><strong>2010-07</strong>: drafts -10 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/10">HTTP/1.1 specifications</a></li>
+  <li><strong>2010-03</strong>: drafts -09 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/09">HTTP/1.1 specifications</a></li>
+  <li><strong>2009-11</strong>: drafts -08 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/08">HTTP/1.1 specifications</a></li>
+  <li><strong>2009-07</strong>: drafts -07 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/07">HTTP/1.1 specifications</a></li>
+  <li><strong>2009-03</strong>: drafts -06 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/06">HTTP/1.1 specifications</a>
+  </li>
+
+  <li><strong>2008-11</strong>: drafts -05 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/05">HTTP/1.1 specifications</a>
+  </li>
+  <li><strong>2008-08</strong>: draft -00 of <a href="http://tools.ietf.org/html/draft-ietf-httpbis-method-registrations-00">Initial Hypertext Transfer Protocol (HTTP) Method Registrations</a></li>
+  <li><strong>2008-08</strong>: drafts -04 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/04">HTTP/1.1 specifications</a>
+  </li>
+  <li><strong>2008-07</strong>: draft -02 of <a href="http://tools.ietf.org/html/draft-ietf-httpbis-security-properties-02">Security Requirements for HTTP</a></li>
+  <li><strong>2008-06</strong>: drafts -03 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/03">HTTP/1.1 specifications</a></li>
+  <li><strong>2008-02</strong>: drafts -02 of the revised <a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/02">HTTP/1.1 specifications</a></li>
+  <li><strong>2007-10:</strong> <a href="http://lists.w3.org/Archives/Public/ietf-http-wg/2007OctDec/0090.html">Hypertext
+    Transfer Protocol Bis WG (httpbis)</a> came to life.</li>
+  <li><strong>2007-06:</strong> <a href="HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-03.txt">new revision of
+    RFC2616bis</a> issued.[<a href="HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-03.html">HTML
+    version</a>]</li>
+  <li><strong>2006-10:</strong> An effort to revise RFC2616 started, see the
+    <a href="HTTP/1.1/rfc2616bis/issues/">Issue list</a>, <a href="HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-02.txt">latest draft</a>
+    [<a href="HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-02.html">HTML
+    version</a>] and the <a href="HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-latest.txt">editors'
+    copy</a> [<a href="HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-latest.html">HTML
+    version</a>].</li>
+  <li><strong>1999-07:</strong> <a href="/1999/07/HTTP-PressRelease">W3C
+    Supports HTTP/1.1 Reaching IETF Draft Standard</a> - (<a href="/1999/07/HTTP11-test.html">testimonials</a>)</li>
+  <li><strong>1999-06:</strong> <strong>NEW <a href="Specs.html#RFC">HTTP
+    IETF RFCs</a>:</strong> 
+    <ul>
+      <li><a href="rfc2616/rfc2616.txt">RFC 2616</a>: <a href="rfc2616/rfc2616.html">Hypertext Transfer Protocol --
+        HTTP/1.1</a> (<a href="HTTP/1.1/rfc2616.ps">Postscript</a>), (<a href="HTTP/1.1/rfc2616.pdf">PDF</a>) (<a href="HTTP/1.1/rfc2616.txt.gz">compressed text</a>)</li>
+      <li><a href="http://www.ietf.org/rfc/rfc2617.txt">RFC 2617: HTTP
+        Authentication: Basic and Digest Access Authentication</a></li>
+      <li><a href="http://purl.org/NET/http-errata">Errata</a> for RFC 2616
+        and RFC 2617</li>
+    </ul>
+  </li>
+  <li><strong>1999-06:</strong> HTTP Extension Framework pending IESG review. 
+    <ul>
+      <li>Stable ID is <a href="HTTP/ietf-http-ext/draft-frystyk-http-extensions-03">draft-frystyk-http-extensions-03.txt</a></li>
+    </ul>
+  </li>
+  <li><strong>1999-05:</strong> <strong>W3C Note:</strong> <a href="/1999/04/Editing/">Editing the Web: Detecting the Lost Update
+    Problem Using Unreserved Checkout</a></li>
+  <li><strong>1999-03-31:</strong> <a href="/Jigsaw/">Jigsaw 2.0.2</a>
+    Implements <a href="HTTP/ietf-http-ext/">HTTP Extension Framework</a></li>
+</ul>
+
+<p>Nearby you can find</p>
+<ul>
+  <li>The <a href="HTTP/Performance/">HTTP Performance Overview</a> for the
+    speed you're longing for...</li>
+  <li>The <a href="HTTP/Forum/">HTTP/1.1 Implementor's Forum</a> for
+    discussions of HTTP/1.1 implementation tricks as well as interoperability
+    work</li>
+</ul>
+
+<p><a href="#Other">Related Protocols</a></p>
+<ul>
+  <li>The <a href="HTTP/ietf-http-ext/">HTTP Extension Framework</a> Internet
+    Draft and discussions</li>
+  <li><a href="MUX/">WebMux</a> - a simple multiplexing protocol</li>
+  <li><a href="HTTP-NG/Activity.html">W3C HTTP-NG activity</a> and <a href="HTTP-NG/">HTTP-NG Overview</a></li>
+</ul>
+</div>
+
+<p></p>
+
+<p></p>
+<hr>
+
+<h2><a name="News" id="News">News,Updates, and Events</a></h2>
+<ul>
+  <li><strong>Dec 16, 1998</strong>: <a href="/People/Jose/">Jose Kahan</a>
+    announces <a href="http://lists.w3.org/Archives/Public/www-lib/1998OctDec/0211.html">client-side
+    Digest Authentication implementation in libwww</a> - <a href="../Library/cvs.html">try it out</a>!</li>
+</ul>
+
+<p>See also the <a href="Timeline.html">HTTP timeline</a> for older events</p>
+
+<h2><a name="Specs" id="Specs">Specifications, Drafts, Papers and
+Reports</a></h2>
+
+<p><strong>HTTP Working Group</strong></p>
+<ul>
+  <li>List of all <a href="Specs.html">HTTP RFCs</a> 
+    <ul>
+      <li><a href="http://www.ietf.org/rfc/rfc2616.txt">RFC 2616:
+        Hypertext Transfer Protocol -- HTTP/1.1</a></li>
+      <li><a href="http://www.ietf.org/rfc/rfc2617.txt">RFC 2617: HTTP
+        Authentication: Basic and Digest Access Authentication</a></li>
+    </ul>
+  </li>
+  <li>Previous <a href="Specs.html">HTTP specifications and drafts</a>. If
+    you are looking for previous drafts then have a look at the <a href="History.html">HTTP draft specification change history</a></li>
+  <li>The <a href="http://ftp.ics.uci.edu/pub/ietf/http/">IETF HTTP working
+    group</a> list of Internet drafts and RFCs</li>
+  <li>The <a href="http://www.ics.uci.edu/~ejw/authoring/">Distributed
+    Authoring and Versioning</a> working group maintains a list of their
+    drafts</li>
+  <li>David M. Kristol maintains a page on <a href="http://kristol.org/cookie/cookie-ver.html">HTTP
+    State Management</a> - a.k.a. cookies</li>
+  <li>Koen Holtman maintains a page on <a href="http://gewis.win.tue.nl/~koen/conneg/">transparent HTTP content
+    negotiation</a></li>
+</ul>
+
+<p><strong>Related Protocols</strong></p>
+<dl compact="compact">
+  <dt><a href="HTTP/ietf-http-ext/">HTTP Extension Framework</a></dt>
+    <dd>An extension mechanism for HTTP designed to address the tension
+      between private agreement and public specification and to accommodate
+      extension of HTTP clients and servers by software components</dd>
+  <dt><a href="MUX/">Multiplexing Protocol (MUX)</a></dt>
+    <dd>A draft proposal for introducing asynchronous messaging support at a
+      layer below HTTP</dd>
+  <dt><a href="HTTP/Fragment/draft-bos-http-redirect-00.txt">Handling of
+  fragment identifiers in redirected URLs</a></dt>
+    <dd>An Internet Draft with a proposal for an issue that HTTP leaves
+      unspecified.</dd>
+  <dt><a href="HTTP-NG/">HTTP-NG - Hypertext Transfer Protocol - Next
+  Generation</a></dt>
+    <dd>a former W3C Activity on reengineering the basic protocol
+      architecture by using modularity, simplicity and layering.</dd>
+</dl>
+
+<p><strong>Background</strong></p>
+<ul>
+  <li><a href="Time/">Overview of Time</a> - What is the state of time on the
+    Internet?</li>
+  <li><a href="Papers.html">Interesting Papers and <strong>MUST</strong>
+    reads</a>! A collection of papers from work shops, conferences etc.</li>
+  <li><a href="HTTP/Performance/Overview.html#Compression">Compression and
+    HTTP</a> - also check out the <a href="http://en.wikipedia.org/wiki/Data_compression">comprehensive
+    compression overview</a></li>
+  <li><a href="Classic.html">Classic HTTP Documents</a> - read how it all
+    started</li>
+</ul>
+
+<h2><a name="Software" id="Software">HTTP Sample Software</a></h2>
+
+<p>W3C offers the <a href="../Jigsaw/">Jigsaw</a> server written in Java and
+the <a href="../Library/">libwww</a> client API - both released with a full
+set of HTTP/1.1 functionality including caching and persistent connections.
+Please see the <a href="/Status.html">W3C open source contributions</a> for
+more details.</p>
+
+<h2><a name="Talks" id="Talks">Talks and Presentations</a></h2>
+<dl>
+  <dt><a href="../Talks/970210HTTP/all.htm">Preliminary HTTP/1.1 Performance
+  Evaluation</a> by Jim Gettys</dt>
+    <dd>The <a href="HTTP/Performance/Pipeline.html">HTTP/1.1 performance
+      paper</a> explains the experiments in detail, and was recently
+      submitted for publication. This work shows how you can gain as much as
+      a factor of 10 in number of packets and 2 in times of speed by using
+      HTTP/1.1 pipelining. Earliest results were presented at the <a href="IETF/9612-SanJose/Notes-day1.html">IETF meeting in San Jose</a>,
+      December 1996, and more complete results at the <a href="../Talks/970115HTTP/all.htm">W3C Advisory Committee Meeting</a>
+      in England in January.</dd>
+  <dt><a href="../Talks/9608HTTP/">Overview of new HTTP/1.1 functionality and
+  changes from HTTP/1.0</a> by Jim Gettys</dt>
+    <dd>This presentation gives a good overview of new features. It will be
+      updated occasionally as it is presented. The presentation is also
+      available for <a href="../Talks/9608HTTP/http_1_1.ppt">Microsoft
+      PowerPoint</a></dd>
+  <dt><a href="../Talks/9606IETF/">PEP - An Extension Mechanism for HTTP</a>
+  by Henrik Frystyk Nielsen and Rohit Khare</dt>
+    <dd>This presentation was given at the <a href="IETF/9606-Montreal/http-wg-minutes.txt">IETF meeting in
+      Montreal</a>, June 1996.</dd>
+</dl>
+
+<h2><a name="Lists" id="Lists">HTTP Mailing lists</a></h2>
+
+<p>There are several mailing lists that you are welcome to use. As several of
+them are very high volume then please check out the archives first to see if
+the topic that you want to bring up in fact already has been discussed. As we
+try to make as much progress on HTTP as possible it is very important that we
+can stay focused - even on open mailing lists!</p>
+<dl>
+  <dt><strong>ietf-http-wg@w3.org</strong> (Archived at <a href="http://lists.w3.org/Archives/Public/ietf-http-wg/">W3C</a> (see also
+  the <a href="http://lists.w3.org/Archives/Public/ietf-http-wg-old/">1994 to
+  2002 archives</a>). </dt>
+    <dd>The official mailing list of the IETF HTTP working group. </dd>
+  <dt><strong><a href="../Mail/Request.html">w3c-http@w3.org</a></strong> (<a href="http://lists.w3.org/Archives/Member/w3c-http/">Archive</a>)</dt>
+    <dd>This is a W3C mailing list dedicated to promote HTTP/1.1
+      implementation, to gain sufficient experience among W3C Members to
+      support the specification, and ease</dd>
+    <dd>development of HTTP/1.1 software and applications. The list is only
+      accessible to W3C members.</dd>
+  <dt><strong><a href="../Mail/Request.html">www-talk@w3.org</a></strong> (<a href="http://lists.w3.org/Archives/Public/www-talk/">Archive</a>)</dt>
+    <dd>This is the primary <i>public</i> mailing list for <strong>technical
+      discussion</strong> among those developing World Wide Web software. It
+      is explicitly intended for the collaborative design of new systems,
+      software, protocols, and documentation which may be useful to the WWW
+      developer community. General questions from non-developers should go
+      one of the many <a href="news:comp.infosystems">newsgroups</a>.</dd>
+  <dt><strong>www-speed@tipper.oit.unc.edu</strong> (<a href="http://www.ibiblio.org/mdma-release/">Information</a>)</dt>
+    <dd>This list is no longer maintained and is not active anymore.
+      <strong>Do not post any mails to this address!</strong></dd>
+</dl>
+
+<p>See also the <a href="HTTP-NG/">information on HTTP-NG</a></p>
+
+<h2><a name="IETF" id="IETF">IETF Related Information</a></h2>
+
+<p>The <a href="http://www.ietf.org">Internet Engineering Task Force</a>
+(IETF) is the protocol engineering and development arm of the Internet. The
+IETF is a large open international community of network designers, operators,
+vendors, and researchers concerned with the evolution of the Internet
+architecture and the smooth operation of the Internet. It is open to any
+interested individual.</p>
+<ul>
+  <li>Current <a href="http://www.ietf.org/internet-drafts/">Internet
+    Drafts</a> (IDs)</li>
+  <li><a href="http://www.rfc-editor.org/rfc-index.html">Request for
+    Comments</a> (RFCs) and another <a href="http://www.garlic.com/~lynn/rfcietff.htm">very nice interface to
+    RFCs</a></li>
+  <li>Information on <a href="http://www.ietf.org/rfc/rfc2000.txt">Internet
+    Official Protocol Standards</a> and</li>
+  <li><a href="http://www.ietf.org/rfc/rfc2026.txt">Internet Standards
+    Process</a> about the IETF standards process.</li>
+</ul>
+
+<h3>Working Groups Related to HTTP</h3>
+
+<p>These are the <a href="http://www.ietf.org">IETF</a> working groups
+working on HTTP directly related issues:</p>
+<ul>
+  <li><a href="http://www.imc.org/ietf-medfree">Content Negotiation</a>
+    (conneg) IETF Working Group with <a href="mailto:ietf-medfree@imc.org">mailing list</a> and <a href="http://www.imc.org/ietf-medfree/entire-arch.txt">archives</a></li>
+  <li><a href="http://ftp.ics.uci.edu/pub/ietf/http/" name="HTTP-wg" id="HTTP-wg">HTTP wg</a> (http) with <a href="mailto:http-wg@cuckoo.hpl.hp.com">mailing list</a> and <a href="http://lists.w3.org/Archives/Public/ietf-http-wg-old/">archives</a></li>
+  <li><a href="http://www.ics.uci.edu/~ejw/authoring/" name="WEBDAV-wg" id="WEBDAV-wg">WWW Distributed Authoring and Versioning</a> (webdav) with
+    <a href="mailto:w3c-dist-auth@w3.org">mailing list</a> and <a href="http://lists.w3.org/Archives/Public/w3c-dist-auth/">archives</a></li>
+  <li><a href="http://datatracker.ietf.org/wg/wts/charter/" name="WTS-wg" id="WTS-wg">Web Transaction Security wg</a> (wts)<!-- with <a
+    href="mailto:www-security@nsmx.rutgers.edu">mailing list</a> and <a
+    href="http://www-ns.rutgers.edu/www-security/www-security-list.html">archives</a> --></li>
+</ul>
+
+<p>Paul Hoffman at the <a href="http://www.imc.org">Internet Mail
+Consortium</a> maintains an excellent list of <a href="http://www.imc.org/ietfwgs.html">IETF working groups directly related
+to Internet Mail</a>. The following list are working groups of more distant
+nature relative to HTTP.</p>
+<ul>
+  <li><a href="http://en.wikipedia.org/wiki/Application_Configuration_Access_Protocol">Application
+    Configuration Access Protocol wg</a> (acap)</li>
+  <li><a href="http://www.pwg.org/ipp/">Internet Printing Protocol</a>
+  (ipp)</li>
+  <li><a href="http://www.ietf.org/html.charters/mmusic-charter.html">Multiparty
+    Multimedia Session Control</a> (mmusic)</li>
+  <li><a href="http://www.ietf.org/html.charters/OLD/tcpimpl-charter.html">TCP Implementation</a>
+    (tcpimpl)</li>
+</ul>
+
+<p>You can also check the full list of <a href="http://www.ietf.org/html.charters/wg-dir.html">IETF working
+groups</a>.</p>
+
+<h3>IETF Meetings</h3>
+<!-- http://www.ietf.org/proceedings/directory.html -->
+<p>Also check out the <a href="http://www.ietf.org/meetings/meetings.html">IETF meeting page</a> for
+the latest information. We keep a small list of notes from previous HTTP wg
+meetings at various IETF meetings:</p>
+<dl>
+  <dt><em>Los Angeles<i>, CA, USA, March-April1998</i></em></dt>
+    <dd><a href="http://www.ietf.org/proceedings/98mar/index.html">Where, how-to,
+      agenda etc.</a></dd>
+  <dt><em>Washington, DC, USA, December 1997</em></dt>
+    <dd><a href="http://lists.w3.org/Archives/Public/ietf-http-wg/1997OctDec/0011.html">HTTP-WG
+      notes from the meeting</a> and the <a href="http://www.ietf.org/proceedings/97dec/toc.htm">complete on-line
+      Procedings</a></dd>
+  <dt><em>Munich, Germany, 11-15 August 1997</em></dt>
+    <dd><a href="ftp://ftp.ietf.org/ietf/http/http-minutes-97aug.txt">HTTP-WG
+      notes from the meeting</a> and the <a href="http://www.ietf.org/proceedings/97aug/toc-97aug.html">complete
+      on-line Proceedings</a></dd>
+  <dt><em>Memphis, TN, 7-11 April 1997</em></dt>
+    <dd><a href="ftp://ftp.ietf.org/ietf/http/http-minutes-97apr.txt">HTTP-WG
+      notes from the meeting</a> and the <a href="http://www.ietf.org/proceedings/97apr/toc-97apr.html">complete on-line
+      Proceedings</a></dd>
+  <dt><em>San Jose, CA, 9-13 December 1996</em></dt>
+    <dd><a href="ftp://ftp.ietf.org/ietf/http/http-minutes-96dec.txt">HTTP-WG
+      notes from the meeting</a> and the <a href="http://www.ietf.org/proceedings/96dec/toc-96dec.html">complete
+      on-line proceedings</a>.</dd>
+  <dt><em>Montreal, Quebec CANADA, 24-28 June 1996</em></dt>
+    <dd><a href="IETF/9606-Montreal/http-wg-minutes.txt">HTTP-WG notes from
+      the meeting</a></dd>
+</dl>
+
+<h3>Other Organizations Related to IETF</h3>
+
+<p>An unordered list of organizations related to IETF:</p>
+<ul>
+  <li>The <a href="http://www.ietf.org/iesg.html">Internet Engineering
+    Steering Group</a> (IESG) which consists of the IETF Area directors
+    together with the Chair of the IETF.</li>
+  <li>The <a href="http://www.isi.edu/irtf/">Internet Research Task Force</a>
+    (IRTF) is a composed of a number of focused, long-term, small Research
+    Groups. These groups work on topics related to Internet protocols,
+    applications, architecture and technology.</li>
+  <li>The <a href="http://www.iab.org/">Internet Architecture Board</a>
+    (IAB) is a body of the Internet Society responsible for overall
+    architectural considerations in the Internet.</li>
+  <li>The <a href="http://www.isoc.org/">Internet Society</a> (ISOC) is a
+    non-governmental International organization for global cooperation and
+    coordination for the Internet and its internetworking technologies and
+    applications.</li>
+  <li>The <a href="http://www.iana.org/">Internet Assigned Numbers
+    Authority</a> (IANA) is the central coordinator for the assignment of
+    unique parameter values for Internet protocols</li>
+</ul>
+
+<h2><a name="Other" id="Other">Other Areas and Protocols</a></h2>
+<ul>
+  <li>The HTTP-NG activity has information about Ã‚&nbsp;the former W3C
+    <a href="HTTP-NG/">HTTP-NG Activity</a></li>
+  <li>The <a href="../Propagation/">Propagation, Caching and Replication</a>
+    area has a lot of information about caching schemes and scalability</li>
+  <li><a href="http://www.imap.org">Internet Message Access Protocol
+    (IMAP)</a> is a method of accessing electronic mail or bulletin board
+    messages that are kept on a (possibly shared) mail server</li>
+  <li><a href="http://en.wikipedia.org/wiki/Next_Generation_Internet_Program">Next Generation Internet (NGI)
+    Initiative</a>. On October 10, 1996, President Clinton and Vice President
+    Gore announced their commitment to the Next Generation Internet (NGI)
+    Initiative, based upon strong research and development programs across
+    Federal agencies.</li>
+  <li><a href="http://www.robotstxt.org/">The Web Robots Pages</a> -
+    information about Web robots and how to manage them</li>
+  <li><a href="http://www.noc.ucla.edu/weather.html">What's the Internet
+    weather like?</a> A really useful service from <a href="http://www.cts.ucla.edu">UCLA</a></li>
+  <li>A few <a href="RelevantProtocols.html">other Internet protocols</a>
+    relevant to HTTP</li>
+</ul>
+
+<p></p>
+
+<p></p>
+<hr>
+<address>
+  <a href="/People/Lafon/">Yves Lafon</a><br>
+  , @(#) $Id: Overview.html,v 1.244 2014-06-11 14:21:46 ylafon Exp $ 
+</address>
+
+<p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> Â© 1996-2003
+<a href="/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>Â®</sup> (<a href="http://www.lcs.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and  Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents">document use</a>
+and <a rel="Copyright" href="/Consortium/Legal/copyright-software">software
+licensing</a> rules apply. Your interactions with this site are in accordance
+with our <a href="/Consortium/Legal/privacy-statement#Public">public</a> and
+<a href="/Consortium/Legal/privacy-statement#Members">Member</a> privacy
+statements.</p>
+
+
+</body></html>Ytext/html¥"Ô_WebResourceResponse_-https://www.w3.org/StyleSheets/activities.cssO	>bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯%'-.4567WXYZ[\]^_`abcdefghijklmnopquU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€$€€ €Ó()$+,WNS.base[NS.relative€ €€_-https://www.w3.org/StyleSheets/activities.cssÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÁÃ"ô¦ ÈÓ89:HVWNS.keysZNS.objects­;<=>?@ABCDEFG€	€
+€€€€€€€€€€€­JKLMNOPQRSTU€€€€€€€€€€€ €!€"€#\Content-Type]Last-Modified_Content-Security-Policy_Content-EncodingWExpires]Cache-ControlTDate_Strict-Transport-Security^Content-LengthX__hhaa__TEtagTVary]Accept-RangesXtext/css_Tue, 08 Aug 2006 10:40:43 GMT_upgrade-insecure-requestsTgzip_Wed, 27 Nov 2019 17:53:45 GMT^max-age=604800_Wed, 20 Nov 2019 17:53:45 GMT_,max-age=15552000; includeSubdomains; preloadS393_4
+
+YnBsaXN0MDDcAQIDBAUGBwgJCgsMDQ8RExUXGRsdHyEjXENvbnRlbnQtVHlwZVRWYXJ5XxAXQ29udGVudC1TZWN1cml0eS1Qb2xpY3lfEBBDb250ZW50LUVuY29kaW5nV0V4cGlyZXNdQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV5Db250ZW50LUxlbmd0aFRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEOWHRleHQvY3NzoRBfEClBY2NlcHQtRW5jb2RpbmcsdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6ESXxAZdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6EUVGd6aXChFl8QHVdlZCwgMjcgTm92IDIwMTkgMTc6NTM6NDUgR01UoRhebWF4LWFnZT02MDQ4MDChGl8QHVdlZCwgMjAgTm92IDIwMTkgMTc6NTM6NDUgR01UoRxfECxtYXgtYWdlPTE1NTUyMDAwOyBpbmNsdWRlU3ViZG9tYWluczsgcHJlbG9hZKEeUzM5M6EgXxAYIjI5MC00MWE3ZjM5ZmVhMGMwLWd6aXAioSJVYnl0ZXOhJF8QHVR1ZSwgMDggQXVnIDIwMDYgMTA6NDA6NDMgR01UAAgAIQAuADMATQBgAGgAdgB7AJcApgCrALkAxwDJANIA1AEAAQIBHgEgASUBJwFHAUkBWAFaAXoBfAGrAa0BsQGzAc4B0AHWAdgAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAAB+A==_"290-41a7f39fea0c0-gzip"_)Accept-Encoding,upgrade-insecure-requestsUbytesÒ/0rs_NSMutableDictionary£rt3\NSDictionaryÒ/0vw_NSHTTPURLResponse£xy3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d Œ ’ ­ Ï ñ ô;BdgjŒ®±³µ·¹»½¿ÁÂÄÆÈÊÑÙåçéë +4:=FOQSZbm{}ƒ…‡‰‹‘“•£¥§©«­¯±³µ·¹»½¿ÌÚô">MV[`nw—³¸Øç6:r¹¿ÄÚŞëğ             z              *O@import url("activities-import.css");
+
+/* Copyright 1997-2005 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+/* $Id: activities.css,v 1.35 2006/08/08 10:40:43 slesch Exp $ */
+
+
+ul#Navigate, p#Footer, p#Validate {
+   font-size: 0.86em;
+}
+
+.whiteout, .whiteout a:link, .whiteout a:visited {
+   background: transparent;
+   color: #fff;
+}
+
+.whiteout a:hover, .whiteout a:focus {
+   background: transparent;
+   color: #00e;
+}
+
+.whiteout a:active {
+   background: transparent;
+   color: #f00;
+}
+
+div.whiteout {
+   margin: -10px 0 0 0;
+   padding: 0;
+}
+
+
+Xtext/cssÔ_4https://www.w3.org/StyleSheets/activities-import.cssO	Ebplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯%'-.4567WXYZ[\]^_`abcdefghijklmnopquU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€$€€ €Ó()$+,WNS.base[NS.relative€ €€_4https://www.w3.org/StyleSheets/activities-import.cssÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÁÃ"ô³5 ÈÓ89:HVWNS.keysZNS.objects­;<=>?@ABCDEFG€	€
+€€€€€€€€€€€­JKLMNOPQRSTU€€€€€€€€€€€ €!€"€#\Content-Type]Last-Modified_Content-Security-Policy_Content-EncodingWExpires]Cache-ControlTDate_Strict-Transport-Security^Content-LengthX__hhaa__TEtagTVary]Accept-RangesXtext/css_Tue, 20 Sep 2016 15:17:38 GMT_upgrade-insecure-requestsTgzip_Wed, 27 Nov 2019 17:54:55 GMT^max-age=604800_Wed, 20 Nov 2019 17:54:55 GMT_,max-age=15552000; includeSubdomains; preloadS940_4
+
+YnBsaXN0MDDcAQIDBAUGBwgJCgsMDQ8RExUXGRsdHyEjXENvbnRlbnQtVHlwZVRWYXJ5XxAXQ29udGVudC1TZWN1cml0eS1Qb2xpY3lfEBBDb250ZW50LUVuY29kaW5nV0V4cGlyZXNdQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV5Db250ZW50LUxlbmd0aFRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEOWHRleHQvY3NzoRBfEClBY2NlcHQtRW5jb2RpbmcsdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6ESXxAZdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6EUVGd6aXChFl8QHVdlZCwgMjcgTm92IDIwMTkgMTc6NTQ6NTUgR01UoRhebWF4LWFnZT02MDQ4MDChGl8QHVdlZCwgMjAgTm92IDIwMTkgMTc6NTQ6NTUgR01UoRxfECxtYXgtYWdlPTE1NTUyMDAwOyBpbmNsdWRlU3ViZG9tYWluczsgcHJlbG9hZKEeUzk0MKEgXxAYIjk3Ni01M2NmMWVkY2Q2ODgwLWd6aXAioSJVYnl0ZXOhJF8QHVR1ZSwgMjAgU2VwIDIwMTYgMTU6MTc6MzggR01UAAgAIQAuADMATQBgAGgAdgB7AJcApgCrALkAxwDJANIA1AEAAQIBHgEgASUBJwFHAUkBWAFaAXoBfAGrAa0BsQGzAc4B0AHWAdgAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAAB+A==_"976-53cf1edcd6880-gzip"_)Accept-Encoding,upgrade-insecure-requestsUbytesÒ/0rs_NSMutableDictionary£rt3\NSDictionaryÒ/0vw_NSHTTPURLResponse£xy3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d Œ ’ ­ Ï ñ ô;BdgjŒ®±³µ·¹»½¿ÁÂÄÆÈÊÑÙåçéë"'2;ADMVXZait‚„†ˆŠŒ’”–˜šœª¬®°²´¶¸º¼¾ÀÂÄÆÓáû$)ET]bgu~º¿ßî=Ay”ÀÆËáåò÷#             z              1O	v/* Copyright 1997-2005 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+/* $Id: activities-import.css,v 1.115 2016/09/20 15:17:38 bbos Exp $ */
+
+
+
+#Icons img {
+   vertical-align: top;
+}
+
+.trail {
+   vertical-align: bottom;
+}
+
+.boldblack {
+  font-weight: bold !important;
+  background: transparent;
+  color: #000  !important;
+}
+
+
+
+/* tables */
+
+table {
+   background: #ddd;
+   color: #000;
+}
+
+th, td {
+   padding: 0.3em 0.2em 0.3em 0.4em;
+}
+
+th {
+   background: #c8e3ea;
+   color: #000;
+ }
+
+td {
+   background: #fff;
+   color: #000;
+ }
+
+
+
+/* right column */
+
+#Contents {
+   float: left;
+   width: 70%;
+   width: calc(100% - 1% - 4% - 13em - 0.2em - 1px - 1px);
+   margin: 0 1% 1em 4%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin-bottom: 0;
+   padding-bottom: 0.15em;
+   border-bottom: 1px solid #ccc;
+   background: transparent;
+   color: #005a9c;
+   font-weight: normal;
+}
+
+h1 {
+   margin-top: 1em;
+   margin-bottom: 0;
+   padding-bottom: 0.15em;
+   border-bottom: none;
+   background: transparent;
+   color: #000;
+}
+
+p.firstelement, table, address {
+   margin-top: 0.7em;
+}
+
+
+
+/* left column */
+
+ul#Navigate, ul.nav {
+   margin: 0;
+   padding: 0.2em 0 0 0;
+}
+
+ul#Navigate {
+   float: left;
+   width: 13em;
+   margin: 1em 0 0 0.2em;
+   border-right: 1px solid gray;
+   background: #c8e3ea;
+   color: #000;
+   text-indent: 2px;
+}
+
+ul#Navigate li, ul.nav li {
+   padding: 0.2em 0 0.2em 0.3em;
+   list-style: none;
+   font-weight: normal;
+}
+
+ul.nav li {
+   border-top: 1px solid gray;
+}
+
+ul#Navigate a, ul.nav li a {
+   padding-right: 0.1em;
+   background: transparent;
+   color: #000;
+   text-decoration: none;
+}
+
+ul#Navigate li.navcurrent, ul.nav li.navcurrent {
+   list-style: disc;
+   background: #fff;
+   color: #000;
+}
+
+ul#Navigate li a:hover, .nav li a:hover,
+ul#Navigate li a:focus, .nav li a:focus {
+   background: transparent;
+   color: #00e;
+   text-decoration: underline;
+}
+
+
+
+/* print */
+
+@media print {
+   body, html {
+      font-family: sans-serif;
+   }
+
+   h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+   }
+
+   blockquote, pre, table {
+      page-break-inside: avoid;
+   }
+
+   ul, ol, dl {
+      page-break-before: avoid;
+   }
+
+   .whiteout, .trail, ul#Navigate, p#Validate {
+      display: none;
+   }
+
+   div#Contents {
+      float: none;
+      width: 100%;
+   }
+}
+Ô_%https://www.w3.org/Icons/WWW/w3c_homeO	Ãbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯('-.4567YZ[\]^_`abcdefghijklmnopqrstuyzU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€&€€	€€'€€ €Ó()$+,WNS.base[NS.relative€ €€_!https://www.w3.org/Icons/w3c_homeÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÁÃ"ô½4 ÈÓ89:IXWNS.keysZNS.objects®;<=>?@ABCDEFGH€	€
+€€€€€€€€€€€€®JKLMNOPQRSTUVW€€€€€€€€€€ €!€"€#€$€%\Content-Type]Last-Modified_Content-Security-PolicyWExpiresStcn]Cache-ControlTDate_Strict-Transport-Security^Content-Length_Content-LocationX__hhaa__TEtagTVary]Accept-Ranges_image/png; qs=0.7_Mon, 24 Jul 2006 14:58:33 GMT_upgrade-insecure-requests_Fri, 20 Dec 2019 17:53:04 GMTVchoice_max-age=2592000_Wed, 20 Nov 2019 17:53:04 GMT_,max-age=15552000; includeSubdomains; preloadT1936\w3c_home.png_|
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlVFZhcnlfEBdDb250ZW50LVNlY3VyaXR5LVBvbGljeVdFeHBpcmVzU3Rjbl1DYWNoZS1Db250cm9sVERhdGVfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XkNvbnRlbnQtTGVuZ3RoXxAQQ29udGVudC1Mb2NhdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPXxARaW1hZ2UvcG5nOyBxcz0wLjehEV8QKm5lZ290aWF0ZSxhY2NlcHQsdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6ETXxAZdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6EVXxAdRnJpLCAyMCBEZWMgMjAxOSAxNzo1MzowNCBHTVShF1ZjaG9pY2WhGV8QD21heC1hZ2U9MjU5MjAwMKEbXxAdV2VkLCAyMCBOb3YgMjAxOSAxNzo1MzowNCBHTVShHV8QLG1heC1hZ2U9MTU1NTIwMDA7IGluY2x1ZGVTdWJkb21haW5zOyBwcmVsb2FkoR9UMTkzNqEhXHczY19ob21lLnBuZ6EjXxAhIjc5MC00MTk1NTE0NzU3ODQwOzU4NGZkMDYxMjVkY2MioSVVYnl0ZXOhJ18QHU1vbiwgMjQgSnVsIDIwMDYgMTQ6NTg6MzMgR01UAAgAIwAwADUATwBXAFsAaQBuAIoAmQCsALEAvwDNAM8A4wDlARIBFAEwATIBUgFUAVsBXQFvAXEBkQGTAcIBxAHJAcsB2AHaAf4CAAIGAggAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACKA==_!"790-4195514757840;584fd06125dcc"_*negotiate,accept,upgrade-insecure-requestsUbytesÒ/0vw_NSMutableDictionary£vx3\NSDictionaryYimage/pngÒ/0{|_NSHTTPURLResponse£}~3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d  • ° Ò ô ÷>Egjm±´¶¸º¼¾ÀÂÄÅÇÉËÍÔÜèêìî"+14=FHJQYdsuwy{}ƒ…‡‰‹ ¢¤¦¨ª¬®°²´¶¸º¼É×ñùı,;NW\aoƒ£¿ßæøGLYÙı*05KO\fkƒ—                           ¥O‰PNG
+
+   IHDR   H   0   …BÌÙ   PLTE      &&&(((,,,111555666777888;;;???DDDEEEFFFIIINNNOOOVVV]]]^^^```aaadddggglllmmmooopppqqqttt||| Zœ[œ[\]]^_Ÿ	`Ÿa b¡c¡d¢f£f£g¤h¥j¥k¦k¦m¨n¨ o¨!o©#qª$qª(t¬-w­2z¯4|°5|±7~±8~²9²:€³<³A„µB…¶D†¶Gˆ¸I‰¸JŠ¹K‹¹NŒºQ»U‘½Y”¿Z”¿[•¿]–À_—Áb™ÂgÄiÅjŸÅkŸÆl Æm¡Æn¡Ço¢Çq£Ès¤Éu¦Éw§Êx¨Ëz©Ë|ªÌ}«Í~¬Í„„„‰‰‰ŠŠŠŒŒŒ‘‘‘’’’–––———˜˜˜šššŸŸŸ   ¡¡¡¢¢¢¥¥¥¦¦¦¨¨¨ªªª«««¬¬¬­­­¯¯¯±±±²²²³³³´´´···¹¹¹¼¼¼¿¿¿‚®Îƒ¯Ï…°Ğ†±Ğ‡±Ğˆ²Ñ‹´ÒŒµÒ–»Ö—¼×˜¼×™½×›¾Ø ÂÚ¤ÄÜ¥ÅÜ¨ÇİªÈŞ¯Ëà°Ìà±Íá²Íá´Îâ·Ğã»Óå¼Ôå¾ÕæÁÁÁÂÂÂÃÃÃÅÅÅÆÆÆÇÇÇÍÍÍÎÎÎÏÏÏÓÓÓØØØÙÙÙÛÛÛÜÜÜİİİßßßÀÖçÁ×çÃØèÅÙèÇÛéÈÛêÊİêËİëÌŞëÍŞëÎßëÍßìÑáíÒâîÓãîÔãîÕäï×åïØåïÙæğÚæğÛèñÜèñàààáááäääçççéééëëëíííîîîáìóâìôäîõçïöéñöêñ÷ëò÷íóøîôøğğğòòòôôôõõõ÷÷÷ğõùó÷úôøûöùü÷úüùùùûûûøúüùûıúüıûüıüüüıııüışışşşşşşşÿÿÿÿÌÌÌ‘š'_   bKGD ˆH   	pHYs   H   H FÉk>  )IDATHÇí—	T”UÇTCbiV$dˆ•´ó10„A…L(¶LE!´PdÑ‰¶GT(SfDFÑ´Ğ¢£ Ñ¾„²ïxï{ßãûfÎÁsêœ¼çÀ÷÷»ïw¾ûŞ»÷9†s!f•Ñi™ÎäÃ ôíN“©]vÔ™L¦^å};M;ëµšß	?æš&'IR²ü&´Q	L–,­–yÒİ\ÎùÕ”V¥å=šÖÍ@Å¡—g‚6( ½èstvœˆ‡Yó¥ï:4Ó´ç.¬XÇ@=:iá3Aú÷	N‹'bœC®¼,|‹zŠŸÏ9Ó³:ŒË't© ap³¥ ½Ùeˆ›µÍ<Ô•ó„Ç€Rçsèx2À`S…¼U¿3!ó²²Os$âô+Íx¦æíÜd\>å CdNŸ?¾g² ÔâVTÙ„µÅ;@L• 3óiqTù|…kQÏu)Èp¦ö\ ò9&=Éå¯?ĞÌè´:·*ù`šR×ñ “¨8!—şÉ¶^CN³³î¡V U>¸ğR×! ËQl÷õ*óUÇj1{h¿5h0@äÃ‚äÃz=îÙ ˆÑHP+yèSÄ}Â‹ùóS$8ÅË |wóÈr¯=ĞV‘OÅ¢±½—€¸Q¼TÙµiy>ÃÂ>…KRà0¬$iÛàåjDk¯æ[¹Şé{ ºœçS‹û”Ä«³‘øî|ş•º-8È;Úåó|°Ú?)çİ V¬›¨4oÌóÃ“ìƒvI,=şÆ=ÔÓá@±“ee%ùáHZ•mo4z1æÓÂ¿ë:ìµªZ¡ôÀíHº	TŠ};ÅÉF¾R¸:Æduõ‚]ƒÕùş$ ¬+=T»®ï—A¯î'`_â'½Çy«t?IŠ–OŸE‡CÏótSİ"¾5…¨7sm°ˆ]„)€Œ|r#êF®±Wç†)€xãƒPvn~³ˆ½\‰¿XÎ7Œñƒ·zêË,']®5OvYø|Ïˆİaå\¿‰ú.üÎ;õpWº^kòRs~:ú~ ZÑ~¨Ü ¾ ô8ÏrWö’ß©çcÊŒn7r–ĞH°Ü~Ğ AÃ%Öê]áut|†ïZJ?vÎ1]§ò°ö¢"¡¡AÅásöË›?ıî%üD-Şk©GÜİÏB*'d¾Ù¨Xn±h{}¤b|î[¢ºhÑ3t29ö¼œÜµs™İLmztQÊ J×ÃuAcœ+ÿfWqÕÎùˆÚÑèEDËâ›e£MÓ}¶#ã¸7Ó	@/|­è†Ç6¡$."|åªÀRO]àU©úıÓïÿ2Û²)€fš³N8HvJb,›Å    IEND®B`‚Yimage/pngÔ !_https://www.w3.org/Icons/archO	¸bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯('-.4567YZ[\]^_`abcdefghijklmnopqrstuyzU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€&€€	€€'€€ €Ó()$+,WNS.base[NS.relative€ €€_https://www.w3.org/Icons/archÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÁÃ"ôÅe ÈÓ89:IXWNS.keysZNS.objects®;<=>?@ABCDEFGH€	€
+€€€€€€€€€€€€®JKLMNOPQRSTUVW€€€€€€€€€€ €!€"€#€$€%\Content-Type]Last-Modified_Content-Security-PolicyWExpiresStcn]Cache-ControlTDate_Strict-Transport-Security^Content-Length_Content-LocationX__hhaa__TEtagTVary]Accept-Ranges_image/png; qs=0.7_Mon, 15 May 2006 22:35:59 GMT_upgrade-insecure-requests_Fri, 20 Dec 2019 18:25:48 GMTVchoice_max-age=2592000_Wed, 20 Nov 2019 18:25:48 GMT_,max-age=15552000; includeSubdomains; preloadT5805Xarch.png_x
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlVFZhcnlfEBdDb250ZW50LVNlY3VyaXR5LVBvbGljeVdFeHBpcmVzU3Rjbl1DYWNoZS1Db250cm9sVERhdGVfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XkNvbnRlbnQtTGVuZ3RoXxAQQ29udGVudC1Mb2NhdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPXxARaW1hZ2UvcG5nOyBxcz0wLjehEV8QKm5lZ290aWF0ZSxhY2NlcHQsdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6ETXxAZdXBncmFkZS1pbnNlY3VyZS1yZXF1ZXN0c6EVXxAdRnJpLCAyMCBEZWMgMjAxOSAxODoyNTo0OCBHTVShF1ZjaG9pY2WhGV8QD21heC1hZ2U9MjU5MjAwMKEbXxAdV2VkLCAyMCBOb3YgMjAxOSAxODoyNTo0OCBHTVShHV8QLG1heC1hZ2U9MTU1NTIwMDA7IGluY2x1ZGVTdWJkb21haW5zOyBwcmVsb2FkoR9UNTgwNaEhWGFyY2gucG5noSNfECIiMTZhZC00MTNkYjRmNzlmMWMwOzU4NGZkMDYxMjVkY2MioSVVYnl0ZXOhJ18QHU1vbiwgMTUgTWF5IDIwMDYgMjI6MzU6NTkgR01UAAgAIwAwADUATwBXAFsAaQBuAIoAmQCsALEAvwDNAM8A4wDlARIBFAEwATIBUgFUAVsBXQFvAXEBkQGTAcIBxAHJAcsB1AHWAfsB/QIDAgUAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACJQ==_""16ad-413db4f79f1c0;584fd06125dcc"_*negotiate,accept,upgrade-insecure-requestsUbytesÒ/0vw_NSMutableDictionary£vx3\NSDictionaryYimage/pngÒ/0{|_NSHTTPURLResponse£}~3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d  • ° Ò ô ÷>Egjm±´¶¸º¼¾ÀÂÄÅÇÉËÍÔÜèêìî'-09BDFMU`oqsuwy{}ƒ…‡‰‹šœ ¢¤¦¨ª¬®°²´¶¸ÅÓíõù(7JSX]kŸ»ÛâôCHQÍò%*@DQ[`txŒ                           šO­‰PNG
+
+   IHDR   Ô   0   æiÃÛ   	pHYs  Ä  Ä•+  _IDATxÚí]TT×Öì‰©jM4ÕÄ÷¿ÓË{/¾?}Å˜¢H”bFcÄ–Ø‚1&¥M¡ˆ4PéMÁ†Ò¥ÃÀP˜a(ÒşïÜ3s¹4ãï[¾ˆk¯Y3ûî³Ï¾ç|w—sÏ½ğµ•ğÌÜt¤£ÿ2àéÀ§#øt¤Ÿt¤ßí£Q|w=¾èvé7wmî~ûôëÀ7RIÏÌm’­ï´•R=¾ûmêb4ß}4ÿÏÁ7ÆÜ¤§ß½C—xåÉšê”mŸ8œ¸MÎébi½¼¹õ«ı§şDRß•§/à™Šuà»7Üßm±KB/óy±ü6M|msô»ÌıK¼Ï'dWM]é7À1ëİşAĞï/!ñ¹¢ÚîîÎ®9›‚oÇL—×«Ğ…Á±7yÕ>„^úc¸ÈC²x[}áíÖ¯ß°ÙŞÛÛÃº{z:»º[Ú®câ±9€ã’(JFñû&ÉÙ(ş@ÊCËÎ¡Š†|¬Ì 3ÑÊkÄeQ\ŞcË$\…ã,<¦­2½ß¨ÇQÃ'¬8ÄZ5@A‘è…uG´ú5f8ßşƒàÎu™¬kŒŞŒÔ3.>ÉÀÜ™ùŞc—€ekÇ“«¤C8?øcÏD„CccÂ„¼E$9#“§­˜‰ß•2qKêùÅ%mEDÀ@ ñjl&bàì~+OÒ‘v¦¡$4£äíma„ÉÀÅ¶G!ÑØÅzaç&4£;b˜¡ÇéÊÁ1uŒÄæjôƒ¨Ôïƒ`,zXmÄ’ş]°2Ãb@FŒØ£Ækú*©ªµà[*L~jµ´IM¾oÌ,üÄrßşşº}(JÁç¿œ°¥<¿6€§ï¢™E†uŞ¾“ËÜRmÄÉî‰ĞL|$.üsG¸(™ï”0ÎHÈÂ¸|csè›[Ã&.ñ¤ó
+“ óİíÇ@/obiËwûÄ!ÊVœl)Hz}K(o¡+×µ0HçØ‡X¸&®ğ8mp(ö©URŠ=¦¾1wN¨mn=SPCõƒXâÅïkö¡ÜAÀ!0ßû1œíÎ+›‚	ÇHøõïÑKEÉÓ³¢r¢4àrš¿ÿä2÷3§„™ßòºô»äÏçŸ½ÿ9LmM£úoL¶{B^WwOE}ËƒK½£V(«SÅ^©Ätz%4¶´ƒ²Ê–¹¥Y4ğÎÊ«j$í]2EKR®lúj)|«<OG\(W·“ø _.­ÿÌ!ŠÍ·€Å¼ªÆÒ:åÿ|?²ö>y¹‚fõª¶êF5(âB™Æ$cÑ¿wE$çÈ ŞŞ®îî’Z¥GbşKONÔO[)8S”/kRµ]GjN¯V(–
+“¨`ZÑÒı­T?èí­¡ÌùÆã|£³*¹ƒ0Ç>Ì¢šæñïµÊã48¡¥£ùîGÓŠ›[;ZÚ/”ÔãÒ¢Ãbæ”º‘é#Kö…_®Ä!ÀcÀ'¾Û‰T—År%0á›C#àœM!½==¦%‚$Æ!õÉdàÈšDfX'.U0³Ş»Ü=èÁË›ÈOu{çñeÇ2K+ZğóUû`Úœ‚¯^Ù^$oşéhæ:Ÿ³WÊDauÓcË}©ÌÔ~(zÀ|ms~nğMƒCbĞ0§R‘~MÇçál{}sh‘\	áK¥õÈ¢³iÎ
+üQm™l+9_Cá{¶@p¤Êñİ-(A}”^Œ6¨Ú¨~J.æ|S!YXÓÄ„w¶‡Qm€8ål?š‰Ÿç‹ë¼“JëT'.•Óèìâè‚ÑtXPÂ#«m»ÑŠ	è'å^ÂÄ¢ƒ1ısk¤Ääaa™¥˜lÌ(Iì8òğğ.Íê„«UomP0y[d<jã3ÉNg	U1W*é!Ä,x/K×Dã8àKÍ¯™ıC‰P&¢¿oR¨ˆ?@"HeĞ
+ãzWş×¾üC|ÂÔ§×øƒXA
+·q±mÃÏ—ÍÚøàRoLÙÜÇª6œÎ?~<FšŠ]$^­½×Æ3ßú£yfÿ»#¾$Ëd¦ÑÖ9:úq-Qı Æ«á|“q¾—Ë¸ƒğæÖP0Û¯wN°ô „p`dÔ¥r\i8÷7¶„nÌ@€¾ÏÊ×*8tâÊ³kÀ™²Ì'ÒİMğ“«üî]ğsd˜ªÜªÆíçqB;ÂqQÂÙÀÛ|º7j¿ÏùY“˜å˜îDÖBrç….ã;‹ÌœÉ2!œ°¢9ÄEÄ$7}àI2dÂ$õ‚¸+UèiGĞyøVø"8¢s
+>dè£ÍİpÑğ-„BRÇ09»™xæº#]] ÁãğšŸä}qˆ7ï¾ÀÂøŸC/Bæ>KÏš&5Úî¹ )ƒ™šƒšıÆBƒ£	L+Öè_äJ}’µ0|äÜƒ`"~sÁG9Àeß°Xaùlo†'NN–y˜9ï"Î‘ï‚¨zsKhƒ2Ìwq­²DK,êO]®à™Š€	³¸ !1¢Ûá“WJ"o$Å=j*fò¹>ğ}óÛ)ğõ4•¬[ÀÙ"0=~yHğAàaï|ğj}jÍÄ_ÿô ğ7§²*‚`@±¼Æ#ÔRÇ	«p³¾„ıcàEmø%œÔø!çJ¸ú©ç»yğ!ÄP–-GÎa‘ Íe„‹¥şŞ5&ç^õ|&"ä5äş%r¥L¡f	¹2hL-â+;|Yez=4/”¤à(.—õsÚ£}ß5K-ÄràoúoyÏg&FİCÁ÷şÎpnÃÅ.‰4Øù$x'ò*Çå:ºŠd2ïnëìîF-ï8 åş¤L ß€!|Û†_j^õ`ıa@Êê”¾)…Zó‘
+bsœNe›:çùlîfğah¦­ôkR·÷ô’ôö¶0„–´ıë§pàW-Š_f­¤|WúO%$ûğ¡Ñğ|Æ¢±‹İY€ï£µØÕÜá ·.şà£awî®ãÔQÑuÚÏ9ÑÍ,Ib¶P§?´Ô’øÄ÷I¶>ã˜¤íoÂ*x>|!–˜k¬‚†±œt–‚/ø\Éh¾ÛŸ€¹ØÊë™Õr"	C‚úÚô½_:È©lœ`áÁ56`cú_¨ğÙÜíàCÚè—ŞÛ‹Ú³mŠ„·Ày0ı„"®éÿ´~ô:^:<øÎ#(ZÚ_³á}ã¬Y§EšUH¡şğY{×5·B5„Æê“´oêJ?”ÕEÎ›˜0Q0!ßúÚ	?ià>óAYo]à%&AL›ì…êîÍ(¡9ƒÆlœ”c SÁdl¼	aØÍƒW5†gD–<¿<¬YâÆçWN0àkŸ{|c{T7ad‰c3Á%¦'WúÕ5—ƒÄ…fHK„Ihr¹´~°B8›
+&SLÎ­Ö?ƒÔsóÔ*¿/~=IàÈÈ ›DóEıÁ‡œÌ}á—Xğ¡„¯zE>•Špö„^¤®ô½½´äp®±9è±²AµÊ3õÇÃÖ^èñÃ=‘vë%i4µø9ŒT»ˆÎÛ3P\O´ò|ÈÚŞİøpy€2c?.¡óöÿÍ!ÌÊÑõyûN+ê+Ç«¥¡çJ`p[Gçø6I‰{KÉ­<,€lRJ«˜;Ç£~ØÚåöü_O:ºjĞ?é>š,ßdr8,Uõô¼±9TÏl(R	Š0@’7«‰#1ÛŠ“ñ3¯ªqycáÂ1ğ£´æEâ”N6§àû·Şg¨Lu£G0âœ†!Ìİ‹‘YôçÔ¾À³:ÂZ"ŒË§YİîwºğhZ@lá’> ˜+cÎ£ Ï,¿ZED…8µÇ—I".”Ñ•¹ôkr$v¨4s+€[½¶9„..ÆeWy'ç'çÊ²Êà^)yÕt%Ò9:õ.<y“šQÖC<Ó|ë‘ü>w­vÈ¡Æ£9!À¼ğó¥0Ã• q°ü]>$.¨Pb&ô´Qx0Á1ÌÚp4¿ª©¼NõÕşhpŒÅ–È›Ib7”0ÏP ¯ææš¬‘NOogW×…’ºvGP™35hN¼§¡KL6˜[2èOä ÙŠ¢šfr‡C+óüÚ IJa²•ª½TZO–]ÌHXyc0QÈÌ.ş¯QÀ’[p´¹‘ğ¹µÈê2‹k{µp–O\Ñ3Óã&¢5^g`*=
+7ùGÔÊ.1J­íôHPZ1
+ŒÉZ Ó|¥G*8ÁéÅCYNBÌEÁN©~xÍôBù¶ÀÌé«¤÷øpÅ#6}êõ"‚—Ùğ’LØú`WÄ'?GÒ¹DPC«şxlHaâH8?¶Lò±C$R@¾s‚Ëì‚Æ-v§2swGs²,Çiøê¦`0_ú.ş·Øã£=è1êÁ%^}f
+±ñA7wN@LGô¤Şšô¸Èş	šÅ"’~¹ÿÔû`²z‡¼J{²$Õ3½¹%×Æb—»÷w„O¶óéw¦‹ïlC@€å¸Z5ĞYäŠôãëßN¡ëà cLXÇùìÚ pÈ¾‡a.uŞB—É¶>hbÌ‰RiÖ†@Í¢ãà›bã5ÚLxw’)jGŞ7<—17”c&ÒH.rÆO‘+ù¾ĞiaáxsÄ_FæËC¼ù‡x_#Åveªà-p"‡Œ\¹­ @-¡?GQÛ@&Vf_Ä3móÿà}uˆ£Õ9Î\¤gÊhF_2=ê;Ãl4á6''¢ïLÚBÄ oìÊµœt¡ï¤1öXıä¬I×„¯ÇXE8²6ğ]Gßi¸ad†E jä"—±|ÑX‘,x¼q6Gx¦>w-ñ}yæ¾<¾äf%ÍI|’V¾7’§2,aÉªúôK2©˜©dXµÀ!ş0=öÑ ™fàåvMøƒáV†E2”‘„ğşaûËó:ÒÑ™ <ŞÙ¯\´{^G#‚.Ù½ º;ÎÀã¥¬˜“a;SG#‚Òmİ!ÆdÚ½˜iwëÍ<Ş»¶û^6ß¥£As,vƒfß–Ì^¼k¶öóÖ4 x¼‰6R©§F­óË\/=?ÁÚï¯7ÆØƒgèÎ3pç™Ü¢¼)¶Ş£ÍD:ÔÓÑÖÛİñü·~¹%YyØ
+â-cï·p»5 Ş½²™t¤ïÍ¡÷gËåM²z%ó°È¤m8ı7)Ov~ÈÜÅè~œ<úy³­îÑÌ#ôÑÍCÍ=Œše}SËŒ5ÒÓL7Péi?yƒ¶ôéÑm­Ì'½IHÁAÛöİ#á4äê³„Ÿ¤\alö}V7ê…ï¦ßˆD™u}í½)co¡ë`ğé1O¦±….šOf?U?ÇcHöĞ1º·Ş„y”Ø<‹©ikÂ<´«ïÊn¾â±j„}›öÛ¢Ë›w˜÷…#9ªéE éÅ@ód1}Æ`8È‚O÷Æ®;Èı~²Õ`ş¾“ËİS¬\ŞÛVÛ¨Ò‚O+Æ<*;sİ‘··…¾¿#ü•MASWø1v÷½‰aÖ†@r“×Öç‰å¾ŸíZ"HühOÄd;	Ú·ğxg{ØRa"ß)^³ÅAÛ;Íş!hÑÁÈşKÔ³ßp »ØıÃ=swgŸêıÛ†£èeŠäÉ•~_üz­>uˆ$Ï@‹†yn×G÷rÈ;÷Aã…¿G_-«ëííiooomkkmkW¶´2àógŸç&v‡d–É›z»;{{º®w\ºPú™C”&b2b~)ù½]ûÃ/ú§44«;Ú;z{»<rŸYãÿc`FBÙÚÚ^ŠªÒ9Ì£¥ë}Î¢;Hövwáhz~õ;ÛBY“í|ĞcsKë}–””v½ü•q¾¤I¥ncz“\º×eŒ,·÷©Cf°¡¹Å/¥ÀV”léšpøDV“’>²ûFš˜]	p\(’{'æ	b®Æe•)”juk›ÉáX(Â˜lè©¬WúŸ.4uŒ[.N¹T,ïèè8S•[Q¿% İÒ%!ğL! ¬ßoE¡Ÿd+°ÎÖ8ÌÚ|>ñjeKk[Z¾Œ}uË$	tôLÎG8^‰¹àÈÊà´"¾c¼µ0)5·
+@ÿ=â’|#‰ò0ñMªÖ½a4›æÉsŠ®ğRp]|pâ¸¸ÃğŒ’Ç—KÈîùo\ ¸u>§å
+Õsk¨6·ø K}•ÑC^°bæ×¨TW7¨^Xw„nÖŸ`éqM¦ àŞÚ†&Øø8ŸºJv…µÎÚøÈê›û)Ë|5à³•@gU}3>Ir>8¢¸lúL4A½ä”×ëÀ7’èåAÀABõÀ/ö•SH³ )|SWød²zåÓ«ıõHæÃ¼LáµYÕj/M£ÚÜãsáD-\¨|Î±şoœ…‡ö}VîaéEè”ÙıÏ¼‰V9¦â—z?½Æ¿¸º±¾¹…y0^>h5(Yğù¦äƒM‚¦®ô“7ªj[ÆõºøîPš·ï¼HJnÕ€·ŒqÁ÷ÁîÈœÎ“x
+fÕù&çqÁg+Jê+AÖ‚ƒ ;ŞÒƒM1Ï^“y§ıäQb8ÂMÒ´èËåpÃè
+>;q_/(>ëëšTãµy¡|#€>ÚÙ¢nø¼È‘¾ÿİÉN$ƒ:×Ê5‡¤©\ğYû`ñ’|ã,ú^aFÁg¤ß³k \@wH:?qˆD9r3à³á@uU½şR¾‘D3VKIòŞ¨Bî¥Y7aˆ¾é«¤uM-ÈÃf~w„€0<Ÿorºµı§£·>Àåt®ÊßÙÆ¬ö‰
+ªø\)¥X×ïnşgg ƒ‘YÛø`òP‚€¸àcæ» EhLVùÓk $M\â½Ò#Õ.òÅÙ?ß2øş¾ñ¨²¥íb±œŞ®oáY$k$à[%¥	œ|w3Ùõ˜ÎEr	¹ drÈ½Xğ!f^“+Õm¨[NŠb³Óóemmíğˆ«=S‘´Q1Ï„<Å\X@98¨C¹àJ+Óø0ßS«¥€/ê;qò«öÁ[üÏ)”­$#<³à÷h
+>×4ªXğ!Êƒc+î¾j…J¡RëÀ7òè™5şîñ9H¶àğjIÙ¨ *j›§³‹ÌÌË@Ä±9uÍ*‚KÀîl¾lá®—èl4´tI`93¿'ãZ÷µµ’ä<0õFÓŸ[Î¡Gø¿ú&µ86;)»ªQ©g¹[
+½?ákÕŠ	Z`¹'ä‚ƒt“U8ÉNrM¦(¯mÒo¤®6ßoå5}µ?¼İæz3Vûğ¢cSñcË|ßİ~lî®ˆYşç6“—IĞğ¥Şœ›cà ã¾Õù±åDl¢Uß{Z_\øïÇi÷°µ÷ÜO­ö×ì30w‡0cí)L/Ü×¼"ûœ¾Z:ƒ#£Ÿî”ÿÃñ3»Vœu7™    IEND®B`‚Ô#$%&_$https://www.w3.org/Icons/WWW/HTTP48xO	±bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯('-.4567YZ[\]^_`abcdefghijklmnopqrstuyzU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€&€€	€€'€€ €Ó()$+,WNS.base[NS.relative€ €€_$https://www.w3.org/Icons/WWW/HTTP48xÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÁÃ"ôÍ! ÈÓ89:IXWNS.keysZNS.objects®;<=>?@ABCDEFGH€	€
+€€€€€€€€€€€€®JKLMNOPQRSTUVW€€€€€€€€€€ €!€"€#€$€%\Content-Type]Last-Modified_Content-Security-PolicyWExpiresStcn]Cache-ControlTDate_Strict-Transport-Security^Content-Length_Content-LocationX__hhaa__TEtagTVary]Accept-Ranges_image/gif; qs=0.5_Sun, 27 Nov 1994 16:00:40 GMT_upgrade-insecure-requests_Fri, 20 Dec 2019 17:52:56 GMTVchoice_max-age=2592000_Wed, 20 Nov 2019 17:52:56 GMT_,max-age=15552000; includeSubdomains; preloadS269[HTTP48x.gif_p
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlVFZhcnlfEBdDb250ZW50LVNlY3VyaXR5LVBvbGljeVdFeHBpcmVzU3Rjbl1DYWNoZS1Db250cm9sVERhdGVfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XkNvbnRlbnQtTGVuZ3RoXxAQQ29udGVudC1Mb2NhdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPXxARaW1hZ2UvZ2lmOyBxcz0wLjWhEV8QI25lZ290aWF0ZSx1cGdyYWRlLWluc2VjdXJlLXJlcXVlc3RzoRNfEBl1cGdyYWRlLWluc2VjdXJlLXJlcXVlc3RzoRVfEB1GcmksIDIwIERlYyAyMDE5IDE3OjUyOjU2IEdNVKEXVmNob2ljZaEZXxAPbWF4LWFnZT0yNTkyMDAwoRtfEB1XZWQsIDIwIE5vdiAyMDE5IDE3OjUyOjU2IEdNVKEdXxAsbWF4LWFnZT0xNTU1MjAwMDsgaW5jbHVkZVN1YmRvbWFpbnM7IHByZWxvYWShH1MyNjmhIVtIVFRQNDh4LmdpZqEjXxAhIjEwZC0yY2FkMWI4Mjc5YTAwOzU4NGZlYTYzMDAyNzYioSVVYnl0ZXOhJ18QHVN1biwgMjcgTm92IDE5OTQgMTY6MDA6NDAgR01UAAgAIwAwADUATwBXAFsAaQBuAIoAmQCsALEAvwDNAM8A4wDlAQsBDQEpASsBSwFNAVQBVgFoAWoBigGMAbsBvQHBAcMBzwHRAfUB9wH9Af8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACHw==_!"10d-2cad1b8279a00;584fea6300276"_#negotiate,upgrade-insecure-requestsUbytesÒ/0vw_NSMutableDictionary£vx3\NSDictionaryYimage/gifÒ/0{|_NSHTTPURLResponse£}~3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d  • ° Ò ô ÷>Egjm±´¶¸º¼¾ÀÂÄÅÇÉËÍÔÜèêìî%.47@IKMT\gvxz|~€‚„†ˆŠŒ’¡£¥§©«­¯±³µ·¹»½¿ÌÚôü />QZ_dr†¦ÂâéûJNZÎò#9=JTYmq…                           “OGIF89a0 0 ò  ÿÿÿş‰‹R©ÿ‡÷¢Ë\dµ¿s  ÿ!ù    ,    0 0  ÒºÜş0ÊI«½8ëÍ»ÿ`(dihÚl°p,/­«8~Õ¶ìÃ
+Ş-G¤ Àl:È¤Ë@­%Q¥s[€"•Õ°!‡ı*¸OEV!“!Ñº¹ˆ³ÛV]æ)Èˆß|{M@ƒy†L}n‘a*–3W>™š‚‰Tz‡~Š 85/|14-DbB 0±ˆº¶¸Y.sŒ}Ã xUÈÅ]Ç_SÊFfKÅkÉxvÖsuHm–äåæçèéêëìíîïğñ	 ;Yimage/gif    1 < Z i € ’ ¨ ® Î ÏiãiíióiüjjBs„vv!v*vaª‰$‰-‰U“š°šºšÃšã¤Ÿ»P»Y»€Å5ÆF             '              ÆP
