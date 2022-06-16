@@ -1,0 +1,224 @@
+<!-- Home Page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Weather Information</title>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<style>
+		#thermometer_inner { width: 95%; height: 20%; margin:2.5%; background: red; position:absolute; bottom:0;}
+		#thermometer_outer {height:400px; position:relative;}
+		#temp_today { color:white; text-align:center; position:relative; top:50%; }
+	</style>
+  </head>
+  <body>
+  	<div class="container">
+      <div class="container-fluid mt-4">
+        <form class="col-12 mx-auto" action="">
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+              <label class='sr-only' for="latitude">Latitude</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Latitude</div>
+                </div>
+                <input id='latitude' class='form-control' type="text" placeholder="40.0150">
+              </div>
+            </div>
+            <div class="col-auto">
+              <label class='sr-only' for="longitude">Longitude</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Longtiude</div>
+                </div>
+                <input id='longitude' class='form-control' type="text" placeholder="105.2705">
+              </div>
+            </div>
+            <div class="col-2">
+              <a href="#" class="btn btn-primary mb-2" onclick="validateInput()">Check Weather</a>
+            </div>
+          </div>
+        </form>
+      </div>
+		<br>
+		<h1 style="text-align:center">Weather Forecast</h1>
+		<hr>
+		<div class="row">
+			<div class="col-4">
+				<div class="card" >
+					<div id="thermometer_outer">
+						<div id="thermometer_inner"><p id="temp_today" class="h3"> 0 F</p></div>
+					</div>
+					<div class="card-body">
+					    <h5 class="text-center">Thermometer</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="height:100%;">
+					<div class="my-auto">
+						<!-- source for images: https://www.iconfinder.com/iconsets/weather-line-19 -->
+						<img id="image_today" class="img-fluid" src="img/clear-day.png" alt="Today's Weather Icon">
+						<p id="icon_today" class="h3" style="text-align:center">Icon</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card " style="height:100%;">
+					<div class="my-auto">
+						<p class="h3" style="padding-left:15px;">Precipitation: <span id="precip_today">10%</span><br>
+					    Humidity: <span id="humidity_today">80%</span><br>
+					    Wind Speed: <span id="wind_today">5</span> mph<br>
+					    Summary: <span id="summary_today">Summary Info</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h2 class="h1" style="text-align:center;">6 Day Forecast</h2>
+		<hr>
+		<div class="row" id="6_day_forecast">
+
+		</div>
+		<br>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script>
+
+    function validateInput() {
+      var latitude = parseFloat(document.getElementById('latitude').value).toFixed(4);
+      var longitude = parseFloat(document.getElementById('longitude').value).toFixed(4);
+      var coordinates = latitude + ',' + longitude;
+      if (((parseFloat(latitude) <= 90) && (parseFloat(latitude) >= -90)) && ((parseFloat(longitude) <= 180) && (parseFloat(longitude) >= -180))) {
+        url ='https://api.darksky.net/forecast/705ce050a89fd6baf46fba4206608c78/' + coordinates;
+        fireAJAX(url);
+      }
+      else {
+        alert('Please enter valid coordinates!\n\n\nHint:\n-90 <= latitude <= 90\n-180 <= longitude <= 180');
+      }
+    }
+
+    function fireAJAX(url) {
+
+      $.ajax({url:url, dataType:"jsonp"}).then(function(weather_data) {
+
+        // variables that hold the daily icon name and the path to the image
+        var daily_icon = weather_data.currently.icon;
+        var daily_icon_src = 'img/' + daily_icon + '.png'
+
+        // Actually changing the html and the attribute 'src' for the middle panel of the weather page
+        $('#icon_today').html(daily_icon);
+        $('#image_today').attr('src', daily_icon_src);
+
+        var current_temp = weather_data.currently.temperature;
+        $('#temp_today').html(current_temp + ' F');
+        if (current_temp >= 0 && current_temp <= 100) {
+          var default_color = 'grey';
+          var hot_color = 'red';
+          var cold_color = 'blue';
+          $('#thermometer_inner').css({'height' : (current_temp + '%')})
+          if (current_temp < 65) {
+            $('#thermometer_inner').css({'background-color' : cold_color})
+          }
+          else if (current_temp > 85) {
+            $('#thermometer_inner').css({'background-color' : hot_color})
+          }
+          else {
+            $('#thermometer_inner').css({'background-color' : default_color})
+          }
+        }
+        else if (current_temp < 0) {
+          $('#thermometer_inner').css({'height' : '0%'})
+          $('#thermometer_inner').css({'background-color' : cold_color})
+        }
+        else if (current_temp > 100) {
+          $('#thermometer_inner').css({'height' : '100%'})
+          $('#thermometer_inner').css({'background-color' : hot_color})
+        }
+
+
+        // stuff for the right panel
+        var daily_precip = parseFloat(weather_data.currently.precipProbability * 100).toFixed(2) + '%'
+        $('#precip_today').html(daily_precip);
+
+        var daily_humidity = parseFloat(weather_data.currently.humidity * 100).toFixed(2) + '%'
+        $('#humidity_today').html(daily_humidity);
+
+        var daily_windSpeed = weather_data.currently.windSpeed + ' mph'
+        $('#wind_today').html(daily_windSpeed);
+
+        var daily_summary = weather_data.currently.summary
+        $('#summary_today').html(daily_summary);
+
+        function createCard(card_data) {
+          var cardTemplate = [
+            '<div class="col-2">',
+              '<div class="card">',
+                '<img class="card-img-top" src="',
+                 card_data.icon_src,
+                '" alt="Card image cap">',
+                '<div class="card-body">',
+                  '<h5 class="card-title" style="font-size: 0.9rem;">',
+                    card_data.day,
+                  '</h5>',
+                  '<p class="card-text"  style="font-size: 0.8rem;"> <br>',
+                    'High: ' + card_data.high + 'F',
+                    '<br>',
+                    'Low: ' + card_data.low + 'F',
+                    '</p>',
+                '</div>',
+              '</div>',
+            '</div>'
+          ];
+          return $(cardTemplate.join(''));
+        }
+
+        var unix_time = weather_data.currently.time;
+        var javascript_time = new Date(unix_time * 1000);//Convert the unix time stamp to javascript
+        var day = javascript_time.getDay();
+        var week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; //This is a helper array to help convert the day of the week [0-7] to a named value [Sunday - Saturday]
+
+        $('#6_day_forecast').empty();
+
+        var cards = $();
+
+        for (var i = 0; i < (week_names.length - 1); i++) {
+
+          var day_int = (day + 1 + i) % week_names.length;
+
+          var day_index = i+1;
+
+          var daily_high = weather_data.daily.data[day_index].temperatureHigh;
+          var daily_low = weather_data.daily.data[day_index].temperatureLow;
+
+          var daily_icon = weather_data.daily.data[day_index].icon;
+          var daily_icon_src = 'img/' + daily_icon + '.png';
+
+          card_data = {
+            'day': week_names[day_int],
+            'high': daily_high,
+            'low': daily_low,
+            'icon_src': daily_icon_src
+          }
+
+          cards = cards.add(createCard(card_data))
+        }
+
+        $('#6_day_forecast').append(cards);
+
+      })
+    }
+
+    $(document).ready(function() {
+        var url = 'https://api.darksky.net/forecast/705ce050a89fd6baf46fba4206608c78/' + '40.0150,105.2705';
+        fireAJAX(url);
+		})
+
+ 	</script>
+</body>
+</html>
